@@ -28,7 +28,7 @@ class SidebarItemComponent extends Component {
             onClick={() => this.selectNote(_note)}
           >
             <ListItemText
-              primary={_note.title + '->' + _note.orderId}
+              primary={_note.title}
               secondary={removeHTMLTags(_note.body.substring(0, 30)) + '....'}
             ></ListItemText>
           </div>
