@@ -40,7 +40,7 @@ class EditorComponent extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className='classes.editorContainer'>
+      <div className={classes.editorContainer}>
         <BorderColorIcon className={classes.editIcon}></BorderColorIcon>
         <input
           className={classes.titleInput}
@@ -51,6 +51,7 @@ class EditorComponent extends Component {
         <ReactQuill
           value={this.state.text}
           onChange={this.updateBody}
+          className={classes.editorContainer}
         ></ReactQuill>
       </div>
     );
